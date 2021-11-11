@@ -1,0 +1,32 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}
+Расписание
+{% endblock %}
+
+{% block content %}
+    <div class="features">
+        {% for el in list %}
+            <div class="alert alert-warning">
+                <h1>{{ el.day }}</h1>
+                <h3>{{ el.time }}</h3>
+                <p>{{ el.predmet }} --- {{ el.title }}</p>
+                <p3>{{ el.kab }}</p3>
+            </div>
+        {% endfor %}
+        <div class="sellect">
+            <select onchange="window.location.href=this.options[this.selectedIndex].value">
+                <option selected disabled="true">--{{ value|date:"D" }}--</option>
+                <option value="{% url 'mond' %}">Понедельник</option>
+                <option value="{% url 'tued' %}">Вторник</option>
+                <option value="{% url 'wedn' %}">Среда</option>
+                <option value="{% url 'thur' %}">Четверг</option>
+                <option value="{% url 'frid' %}">Пятница</option>
+            </select>
+
+        </div>
+        </div>
+
+    </div>
+{% endblock %}

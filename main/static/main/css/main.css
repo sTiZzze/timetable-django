@@ -1,0 +1,95 @@
+body {
+    background: #2c2c2c;
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+}
+
+aside img {
+    width: 80px;
+    float: left;
+
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 11px;
+
+}
+
+aside ul {list-style: none;}
+
+aside ul li {
+    color: #fff;
+    display: block;
+    margin-top: 15px;
+    transition: transform .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #ed5959;
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+aside h3 {
+    font-size: 28px;
+    margin-left: 10px;
+    margin-top: 50px;
+
+}
+
+main .features {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+main .features h1{font-size: 25px;}
+main .features p{max-width: 400px; margin: 20px auto;}
+
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
+
+main .down {
+    float: left;
+    color: #fff;
+    margin-top: 100px;
+    text-align: center;
+    width: 75%;
+}
+
+
+aside spin{
+    position: relative;
+    font-size: 15px;
+    top: 500px;
+
+
+}
+
+main .sellect select {
+    width: 10%;
+    border-right: 10px solid red;
+    background-color: #fff3cd;
+
+}

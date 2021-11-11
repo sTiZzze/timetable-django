@@ -1,0 +1,22 @@
+{% extends 'main/layout.html' %}
+
+
+{% block title %}
+Расписание
+{% endblock %}
+<h4>Вторник</h4>
+{% block content %}
+    <div class="features">
+        <h2>GHU</h2>
+        {% for el in list %}
+            <div class="alert alert-warning">
+                <h3>{{ el.time }}</h3>
+                <p>{{ el.predmet }} --- {{ el.title }}</p>
+                <p3>{{ el.kab }}</p3>
+            </div>
+        {% endfor %}
+
+        </div>
+
+    </div>
+{% endblock %}
